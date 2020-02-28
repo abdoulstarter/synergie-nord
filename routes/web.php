@@ -37,4 +37,15 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('convention', 'ConventionController');
+	Route::resource('activities', 'ActivitiesController');
+	Route::resource('organismes', 'OrganismesController');
+	Route::resource('odd', 'OddController');
+	Route::resource('oscreed', 'OscreddController');
+	Route::resource('projets', 'ProjectsProgrammesController');
+	Route::resource('regions', 'RegionsController');
+	Route::resource('cercles', 'CerclesController');
+	Route::resource('communes', 'CommunesController');
+	Route::resource('categoriesOrganismes', 'CategoriesOrganismesController');
+	Route::resource('zones', 'ZonesController');
+	Route::resource('typesOrganismes', 'TypesOrganismesController');
 });
